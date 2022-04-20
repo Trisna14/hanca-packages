@@ -1,6 +1,8 @@
 class App {
     
-    warmup = (URL, success) => {
+    warmup = (REQUEST,URL, source) => {
+
+        // console.log(REQUEST);
 
         let xhr = new XMLHttpRequest();
     
@@ -10,12 +12,12 @@ class App {
                 
                 if (xhr.status === 200) {
     
-                    success(JSON.parse(xhr.response));
+                    source(xhr.response);
                 }
             }
         }
     
-        xhr.open('GET',URL, true);
+        xhr.open(REQUEST,URL, true);
         xhr.send();
 
     }
@@ -24,44 +26,30 @@ class App {
 
 export class Pen extends App {
 
-    caller = function (URL) {
+    caller = function (REQUEST,success) {
 
-        console.log(URL);
-
-        // const KEY = (URL.in_key.length > 0 && URL.middle_key.length > 0) ? URL.middle_key+URL.in_key : '';
-        // const ID = (URL.in_id.length > 0 && URL.middle_id.length > 0) ? URL.middle_id+URL.in_id : '';
-        // const PART = (URL.in_part.length > 0 && URL.middle_part.length > 0) ? URL.middle_part+URL.in_part : '';
-
-        // console.log(PART);
-
-        // console.log(URL.in_url+URL.middle_key+URL.in_key+URL.middle_id+URL.in_id+URL.middle_part+URL.in_part);
-        // const FINAL_URL = URL.in_url+KEY+ID+PART;
-        // this.warmup (
-
-        //     FINAL_URL
-        //     , 
-        //     (API) => {
+        if (typeof REQUEST == 'object') {
             
-        //         console.log(API);
-                
-        //         // templates
-        //         const templates = `<div class="youtube_channel">
-        //                                 <div class="thumb">
-        //                                     <img src="" alt="">
-        //                                 </div>
-        //                                 <div class="channel_data">
-        //                                     <ul>
-        //                                         <li>Nama Channel : ${API.items[0].snippet.title}</li>
-        //                                         <li>Deskripsi Channel : ${API.items[0].snippet.description}</li>
-        //                                         <li>ID Channel : ${API.items[0].id}</li>
-        //                                     </ul>
-        //                                 </div>
-        //                             </div>`;
+            var FINAL_URL = REQUEST.URL_API;
 
-        //         document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
-        //     }
+        } else {
+
+            var FINAL_URL = REQUEST;
+        }
+        
+        
+        this.warmup (
+            REQUEST.HTTP_Request
+            ,
+            FINAL_URL
+            , 
+            (API) => {
             
-        // );
+                // console.log(API);
+                success( API);
+            }
+            
+        );
     }
 
 }
