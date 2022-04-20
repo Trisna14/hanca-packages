@@ -24,51 +24,44 @@ class App {
 
 export class Pen extends App {
 
-    caller = function () {
+    caller = function (URL) {
 
-        // keys      &   values
-        const in_url      =   'https://www.googleapis.com/youtube/v3/channels?';
-        const in_key      =   'AIzaSyCX2FZdrCPbQ24t8Ah6eTPF69xXOPFgmIM';
-        const in_id       =   'UCJFeg4cV7kM4QsECKcx_eEA';
-        const in_part     =   'snippet,status';
+        console.log(URL);
 
-         // second key
-        const middle_key  =   'key=';
-        const middle_id   =   '&id=';
-        const middle_part =   '&part=';
+        // const KEY = (URL.in_key.length > 0 && URL.middle_key.length > 0) ? URL.middle_key+URL.in_key : '';
+        // const ID = (URL.in_id.length > 0 && URL.middle_id.length > 0) ? URL.middle_id+URL.in_id : '';
+        // const PART = (URL.in_part.length > 0 && URL.middle_part.length > 0) ? URL.middle_part+URL.in_part : '';
 
-        const final_key = (in_key.length > 0) ? middle_key+in_key : '';
-        const final_id = (in_id.length > 0) ? middle_id+in_id : '';
-        const final_part = (in_part.length > 0) ? middle_part+in_part : '';
+        // console.log(PART);
 
-        const URL =  in_url+final_key+final_id+final_part;
+        // console.log(URL.in_url+URL.middle_key+URL.in_key+URL.middle_id+URL.in_id+URL.middle_part+URL.in_part);
+        // const FINAL_URL = URL.in_url+KEY+ID+PART;
+        // this.warmup (
 
-        this.warmup (
-
-            URL
-            , 
-            (API) => {
+        //     FINAL_URL
+        //     , 
+        //     (API) => {
             
-                // console.log(API.items[0].id);
+        //         console.log(API);
                 
-                // templates
-                const templates = `<div class="youtube_channel">
-                                        <div class="thumb">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="channel_data">
-                                            <ul>
-                                                <li>Nama Channel : ${API.items[0].snippet.title}</li>
-                                                <li>Deskripsi Channel : ${API.items[0].snippet.description}</li>
-                                                <li>ID Channel : ${API.items[0].id}</li>
-                                            </ul>
-                                        </div>
-                                    </div>`;
+        //         // templates
+        //         const templates = `<div class="youtube_channel">
+        //                                 <div class="thumb">
+        //                                     <img src="" alt="">
+        //                                 </div>
+        //                                 <div class="channel_data">
+        //                                     <ul>
+        //                                         <li>Nama Channel : ${API.items[0].snippet.title}</li>
+        //                                         <li>Deskripsi Channel : ${API.items[0].snippet.description}</li>
+        //                                         <li>ID Channel : ${API.items[0].id}</li>
+        //                                     </ul>
+        //                                 </div>
+        //                             </div>`;
 
-                document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
-            }
+        //         document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
+        //     }
             
-        );
+        // );
     }
 
 }
