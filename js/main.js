@@ -9,4 +9,7 @@ var REQUEST = {
 
 }
 
-google.caller(REQUEST,function (API) { console.log(JSON.parse(API))});
+google.caller(REQUEST,(API) => { 
+    
+    console.log(JSON.parse(API));
+});
