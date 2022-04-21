@@ -54,5 +54,34 @@ class Pen extends App {
     }
 
     // 
+    // BY SEARCH
+    caller_by = function (SEARCH_ID,REQUEST,success) {
+
+        // console.log(REQUEST.URL_API);
+        // console.log(SEARCH_ID);
+
+        if (SEARCH_ID.length < 0) {
+
+            var FINAL_URL = REQUEST.URL_API+0;
+        } else {
+
+            var FINAL_URL = REQUEST.URL_API+SEARCH_ID;
+        }
+
+        console.log(FINAL_URL);
+
+        this.warmup (
+            REQUEST.HTTP_Request
+            ,
+            FINAL_URL
+            , 
+            (API) => {
+            
+                // console.log(API);
+                success( API);
+            }
+            
+        );
+    }
 
 }

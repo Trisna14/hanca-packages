@@ -35,3 +35,89 @@
 .call_youtube .youtube_channel .channel_data ul li {
     margin-bottom: 6px;
 }
+
+/* search */
+.by_search {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 80px;
+}
+
+.by_search .input_search {
+    /* text-align: center; */
+    width: 700px;
+    height: 38px;
+    display: inline-block;
+    border: 1px solid gainsboro;
+
+}
+
+.by_search .input_search input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: 4px 14px;
+}
+
+.by_search .knob {
+    margin-top: 15px;
+}
+
+.by_search .knob button {
+    background: none;
+    border: 0;
+    padding: 11px 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* font-weight: bold; */
+    font-size: 12px;
+    border: 1px solid gainsboro;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper {
+    /* border: 1px solid rgba(0, 0, 0, 0.644); */
+    width: 79%;
+    margin: auto;
+    margin-top: 38px;
+    min-height: 100px;
+}
+
+.wrapper .wrapper_movie {
+    display: flex;
+    /* width: 200px; */
+    /* border: 1px solid red; */
+    /* height: 240px; */
+    padding: 8px;
+    margin-bottom: 10px;
+    /* background-color: rgba(220, 220, 220, 0.041); */
+    /* border-bottom: 1px solid rgba(206, 210, 212, 0.308); */
+    /* border-top: 1px solid rgba(206, 210, 212, 0.459); */
+    border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+.wrapper .wrapper_movie .poster {
+    width: 200px;
+    height: 240px;
+    margin-right: 10px;
+}
+
+.wrapper .wrapper_movie .poster img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .wrapper_movie .movie_data h2 { 
+    font-size: 24px;
+}
+
+.wrapper .wrapper_movie .movie_data ul li {
+    list-style: none;
+    margin: 4px 0;
+    font-size: 12px;
+    color: rgb(37, 37, 37);
+    letter-spacing: 1px;
+}
