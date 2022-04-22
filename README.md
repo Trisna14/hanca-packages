@@ -26,7 +26,8 @@ init.caller(REQUEST_CONFIG,(API) => {
 });
 
 ```
-
+ | Results By Keyword |
+ | :---        |
 ```javascript
 
 // Results By Keywords
