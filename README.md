@@ -1,11 +1,25 @@
 # hutAPI
 
-[link ke petanikode](https://www.petanikode.com/)
+## Contoh sederhana penggunaan function
 
 ```java
-class HelloWorld{
-    public static void main(String[] argumen){
-        System.out.println("Hello World!");
-    }
+
+var init = new Pen;
+
+var REQUEST = {
+   
+    URL_API     : 'https://.....',
+
+    HTTP_Request    : 'GET'      // type Request
+
 }
+
+init.caller(REQUEST,(API) => { 
+    
+    console.log(JSON.parse(API));
+    
+});
+
+init.caller({},(API) => { console.log(API); });
+
 ```
