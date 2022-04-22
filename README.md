@@ -1,8 +1,7 @@
 # .....
 
-**For Example**
-* All Results
-* Results By Keyword
+**For Example**.
+| All Results | Results By Keyword |
 
 ```javascript
 
