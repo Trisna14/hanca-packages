@@ -1,6 +1,7 @@
 # hutAPI
 
-* Contoh sederhana penggunaan function
+* Contoh Sederhana Penggunaan Function
+* Simple Usage Example
 
 ```javascript
 
