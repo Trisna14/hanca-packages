@@ -1,5 +1,6 @@
 # .....
 
+Text attributes _italic_, **bold**, `monospace`.
 * Contoh Sederhana Penggunaan Function
 * Simple Usage Example
 

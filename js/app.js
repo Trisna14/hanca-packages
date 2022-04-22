@@ -63,9 +63,7 @@ class Pen extends App {
     // BY SEARCH
     caller_by = function (REQUEST,success) {
 
-        // console.log(REQUEST.ID_INPUT);
-        // console.log(SEARCH_ID);
-
+        // console.log(REQUEST);
         const btn = document.getElementById(REQUEST.ID_BUTTON);
         btn.onclick = () => {
             
