@@ -22,6 +22,11 @@ class App {
 
     }
 
+    //      |||||   |||||   |||||
+    pretend = function () {
+        console.log('pretend!!');
+    }
+
 }
 
 class Pen extends App {
@@ -38,6 +43,7 @@ class Pen extends App {
             var FINAL_URL = REQUEST;
         }
         
+        // console.log(this);
         
         this.warmup (
             REQUEST.HTTP_Request
@@ -55,33 +61,42 @@ class Pen extends App {
 
     // 
     // BY SEARCH
-    caller_by = function (SEARCH_ID,REQUEST,success) {
+    caller_by = function (REQUEST,success) {
 
-        // console.log(REQUEST.URL_API);
+        // console.log(REQUEST.ID_INPUT);
         // console.log(SEARCH_ID);
 
-        if (SEARCH_ID.length < 0) {
+        const btn = document.getElementById(REQUEST.ID_BUTTON);
+        btn.onclick = () => {
+            
+            var SEARCH_ID = document.getElementById(REQUEST.ID_INPUT).value;
 
-            var FINAL_URL = REQUEST.URL_API+0;
-        } else {
-
-            var FINAL_URL = REQUEST.URL_API+SEARCH_ID;
+            // console.log(this);
+    
+            if (SEARCH_ID.length < 0) {
+    
+                var FINAL_URL = REQUEST.URL_API+0;
+            } else {
+    
+                var FINAL_URL = REQUEST.URL_API+SEARCH_ID;
+            }
+    
+            // console.log(FINAL_URL);
+    
+            this.warmup (
+                REQUEST.HTTP_Request
+                ,
+                FINAL_URL
+                , 
+                (API) => {
+                
+                    // console.log(API);
+                    success( API);
+                }
+                
+            );
         }
 
-        console.log(FINAL_URL);
-
-        this.warmup (
-            REQUEST.HTTP_Request
-            ,
-            FINAL_URL
-            , 
-            (API) => {
-            
-                // console.log(API);
-                success( API);
-            }
-            
-        );
     }
 
 }
