@@ -1,3 +1,3 @@
 # hutAPI
 
-<h2 style="color: red;">hi</h2>
+[link ke petanikode](https://www.petanikode.com/)
