@@ -2,8 +2,8 @@
 
 **For Example** :joy:.
 
-| All Results      | Results By Keyword |
-| :---        |    :----:   |
+| All Results |
+| :---        |
 
 
 ```javascript
