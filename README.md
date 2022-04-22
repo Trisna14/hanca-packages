@@ -1,7 +1,12 @@
 # .....
 
-**For Example**.
+**For Example** :joy:.
 | All Results | Results By Keyword |
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 
 ```javascript
 
