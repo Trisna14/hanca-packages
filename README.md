@@ -20,6 +20,4 @@ init.caller(REQUEST,(API) => {
     
 });
 
-init.caller({},(API) => { console.log(API); });
-
 ```
