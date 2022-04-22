@@ -1,20 +1,20 @@
 # hutAPI
 
-## Contoh sederhana penggunaan function
+* Contoh sederhana penggunaan function
 
-```java
+```javascript
 
 var init = new Pen;
 
-var REQUEST = {
+var REQUEST_CONFIG = {
    
-    URL_API     : 'https://.....',
+    URL_API     : 'https://',   // url API
 
     HTTP_Request    : 'GET'      // type Request
 
 }
 
-init.caller(REQUEST,(API) => { 
+init.caller(REQUEST_CONFIG,(API) => { 
     
     console.log(JSON.parse(API));
     
