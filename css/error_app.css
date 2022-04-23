@@ -6,7 +6,7 @@
     /* border: 1px solid rgb(235, 4, 4); */
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.274);
+    /* background-color: rgba(0, 0, 0, 0.274); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,12 +15,12 @@
 }
 
 .Not_Found_404 .code404 {
-    width: 350px;
-    height: 350px;
-    background-color: rgba(255, 255, 255, 0.795);
+    width: 510px;
+    height: 510px;
+    background-color: rgba(184, 178, 178, 0.171);
     border: 1px solid rgba(220, 220, 220, 0.514);
     border-radius: 100%;
-    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 2px 4px 2px rgba(194, 191, 191, 0.11);
 
     display: flex;
     justify-content: center;
@@ -33,4 +33,13 @@
     letter-spacing: 4px;
     color: gray;
     font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.Not_Found_404 .code404 span p {
+    font-size: 90px;
+}
+.Not_Found_404 .code404 span .title {
+    font-weight: lighter;
 }
