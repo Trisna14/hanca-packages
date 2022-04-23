@@ -1,20 +1,20 @@
 // console.log(new Pen)
 
-var google = new Pen;
+// var google = new Pen;
 
-var REQUEST = {
+// var REQUEST = {
    
-    URL_API     : 'https://www.googleapis.com/youtube/v3/channels?key=AIzaSyCX2FZdrCPbQ24t8Ah6eTPF69xXOPFgmIM&id=UCJFeg4cV7kM4QsECKcx_eEA&part=snippet,status',
-    // URL_API     : 'htatus',
+//     URL_API     : 'json/fake.json',
+//     // URL_API     : 'htatus',
 
-    HTTP_Request    : 'GET'      // type Request
+//     HTTP_Request    : 'GET'      // type Request
 
-}
+// }
 
-google.caller(REQUEST,(API) => { 
+// google.caller(REQUEST,(API) => { 
  
-    console.log((JSON.parse(API)));
-    const GOOGLE_API = JSON.parse(API)
+//     console.log((JSON.parse(API)));
+//     const GOOGLE_API = JSON.parse(API)
     
     // templates
     // const templates = `<div class="youtube_channel">
@@ -31,9 +31,9 @@ google.caller(REQUEST,(API) => {
     //                     </div>`;
 
     // document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
-});
+// });
 
-// let omdb = new Pen;
+let omdb = new Pen;
 
 
 
@@ -79,12 +79,12 @@ google.caller(REQUEST,(API) => {
         
                 HTTP_Request    : 'GET' ,
 
-                ID_INPUT    : 'data',
-                ID_BUTTON   : 'by_search'
+                ID_INPUT    : 'cari',
+                ID_BUTTON   : 'tombol'
         
             }
 
-            // omdb.caller_by(REQUEST, (API) => {console.log(JSON.parse(API))});
+            omdb.caller_by(REQUEST, (API) => {console.log(JSON.parse(API))});
 // }
 
 

@@ -4,7 +4,7 @@
 
 ```javascript
 
-<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/package.app.js"></script>
 
 ```
 

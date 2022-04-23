@@ -2,7 +2,11 @@ export class Error_App {
 
     Not_Found = function () {
         
-        return '<h1>not found</h1>';
+        return `<div class="Not_Found_404">
+                    <div class="code404">
+                        <span>404</span>
+                    </div>
+                </div>`;
     }
 
 }
