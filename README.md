@@ -2,6 +2,12 @@
 
 **For Example** :joy:.
 
+```javascript
+
+<script type="text/javascript" src="js/app.js"></script>
+
+```
+
 | All Results |
 | :---        |
 
