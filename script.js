@@ -16,24 +16,24 @@ google.caller(REQUEST,(API) => {
     console.log((JSON.parse(API)));
 //     const GOOGLE_API = JSON.parse(API)
     
-    // templates
-    // const templates = `<div class="youtube_channel">
-    //                         <div class="thumb">
-    //                             <img src="" alt="">
-    //                         </div>
-    //                         <div class="channel_data">
-    //                             <ul>
-    //                                 <li>Nama Channel : ${GOOGLE_API.items[0].snippet.title}</li>
-    //                                 <li>Deskripsi Channel : ${GOOGLE_API.items[0].snippet.description}</li>
-    //                                 <li>ID Channel : ${GOOGLE_API.items[0].id}</li>
-    //                             </ul>
-    //                         </div>
-    //                     </div>`;
+//     // templates
+//     // const templates = `<div class="youtube_channel">
+//     //                         <div class="thumb">
+//     //                             <img src="" alt="">
+//     //                         </div>
+//     //                         <div class="channel_data">
+//     //                             <ul>
+//     //                                 <li>Nama Channel : ${GOOGLE_API.items[0].snippet.title}</li>
+//     //                                 <li>Deskripsi Channel : ${GOOGLE_API.items[0].snippet.description}</li>
+//     //                                 <li>ID Channel : ${GOOGLE_API.items[0].id}</li>
+//     //                             </ul>
+//     //                         </div>
+//     //                     </div>`;
 
-    // document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
+//     // document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
 });
 
-let omdb = new Pen;
+// let omdb = new Pen;
 
 
 

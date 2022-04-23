@@ -1,30 +1,26 @@
 
 class Divider {
 
-    find_err = function (err) {
+    find_err = function () {
         import ('./error_app.js').then ( module => {
 
-        // console.log(new module.Error_App)
         var init = new module.Error_App;
 
-        // init.not_found();
-            err(init.err404());
+           init.err404((source) => { 
+
+                document.body.innerHTML = source;
+                // console.log(source)
+            });
         });
     }
 
-    error404 = function () {
-        this.find_err((err) => {
-        
-            document.body.innerHTML = err;
-        });
-    }
 
     // ---------------------------- //
 
 
 }
 // let data = new Divider
-// data.Not_Found_404();
+// data.find_err();
 
 // APP
 class App extends Divider{
@@ -45,8 +41,7 @@ class App extends Divider{
 
                 } else if (xhr.status === 404 ) {
 
-                    // console.log(this.Not_Found_404());
-                    this.error404();
+                    this.find_err();
                 }
             }
         }

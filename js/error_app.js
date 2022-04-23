@@ -1,12 +1,24 @@
 export class Error_App {
 
-    err404 = function () {
+    err404 = function (source) {
         
-        return `<div class="Not_Found_404">
-                    <div class="code404">
-                        <span>404</span>
-                    </div>
-                </div>`;
+        let xhr = new XMLHttpRequest();
+    
+        xhr.onreadystatechange = () => {
+    
+            if (xhr.readyState === 4) {
+                
+                if (xhr.status === 200) {
+                    
+                    // console.log(xhr.responseText);
+                    source(xhr.responseText);
+                }
+            }
+        }
+    
+        xhr.open('GET','./markup/404.html', true);
+        xhr.send();
+        
     }
 
 }
