@@ -2,8 +2,8 @@
 #### this is a semi-finished program that I use to help work on the website on the front end.
 
 **what's there**
-- [x] API ( Fetch data From Rest )
-- [x] Modal Box With Ajax
+- [x] Fetch data From Rest API
+- [x] Ajax By Modal
 
 ```html
 
@@ -63,6 +63,7 @@ init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
 
 **For Example : Modal By Ajax** 
 <details>
+
   <p>
 
 ```js
