@@ -63,7 +63,7 @@ init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
 
 **For Example : Modal By Ajax** 
 <details>
-    <summary>Sample Query</summary>
+    <summary>Sample Usage Modal</summary>
   <p>
 
 ```js
