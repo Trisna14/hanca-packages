@@ -1,19 +1,19 @@
 // console.log(new Pen)
 
-var google = new Pen;
+// var google = new Pen;
 
-var REQUEST = {
+// var REQUEST = {
    
-    URL_API     : 'json/fake.json',
-    // URL_API     : 'htatus',
+//     URL_API     : 'json/fake.json',
+//     // URL_API     : 'htatus',
 
-    HTTP_Request    : 'GET'      // type Request
+//     HTTP_Request    : 'GET'      // type Request
 
-}
+// }
 
-google.caller(REQUEST,(API) => { 
+// google.caller(REQUEST,(API) => { 
  
-    console.log((JSON.parse(API)));
+//     console.log((JSON.parse(API)));
 //     const GOOGLE_API = JSON.parse(API)
     
 //     // templates
@@ -31,7 +31,7 @@ google.caller(REQUEST,(API) => {
 //     //                     </div>`;
 
 //     // document.getElementsByClassName('call_youtube')[0].innerHTML = templates;
-});
+// });
 
 // let omdb = new Pen;
 
@@ -102,3 +102,10 @@ google.caller(REQUEST,(API) => {
 
 //     omdb.caller_by(REQUEST, (API) => {console.log(JSON.parse(API))});
 // }
+
+let init = new Modal;
+let REQUEST = {
+    "URL"   :   "markup/modal.html",
+    "BUTTON_ID" :   'button'
+}
+init.crt_modal(REQUEST);

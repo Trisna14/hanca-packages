@@ -14,13 +14,8 @@ class Divider {
         });
     }
 
-
-    // ---------------------------- //
-
-
 }
-// let data = new Divider
-// data.find_err();
+
 
 // APP
 class App extends Divider{
@@ -130,3 +125,33 @@ class Pen extends App {
     }
 
 }
+
+// modal
+class Modal {
+
+    crt_modal = function (REQUEST) {
+
+        const button = document.getElementById(REQUEST.BUTTON_ID);
+
+        console.log(button)
+        button.onclick = function () {
+            
+            import ('./modal_app.js').then ( module => {
+
+                var init = new module.Modal_App;
+                init.call_modal(REQUEST.URL,(modal) => {
+                    document.body.innerHTML = modal;
+                });
+            });
+        }
+
+    }
+}
+
+// let init = new Modal;
+// let REQUEST = {
+//     "URL"   :   "markup/modal.html",
+//     "BUTTON_ID" :   'button'
+// }
+// init.crt_modal(REQUEST);
+// init.crt_modal();
