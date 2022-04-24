@@ -62,7 +62,10 @@ init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
 ```
 
 **For Example : Modal By Ajax** 
-```javascript
+<details>
+  <p>
+
+```js
 
 let init = new Modal;
 let REQUEST = {
@@ -72,3 +75,6 @@ let REQUEST = {
 init.crt_modal(REQUEST);
 
 ```
+
+</p>
+</details>
