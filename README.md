@@ -1,7 +1,9 @@
 # hanca-packages
+
 ##### *several ways of asynchronous data retrieval*
 
 **what's there**
+
 - [x] Asynchronous Fetch data From Rest API
 - [ ] - - - -
 
@@ -14,10 +16,8 @@
 
 **For Example : Asynchronous Fetch Data Form Rest** :joy:.
 
-
 | All Results |
 | :---        |
-
 
 ```javascript
 
@@ -39,8 +39,10 @@ init.caller(REQUEST_CONFIG,(API) => {
 });
 
 ```
+
  | Results By Keyword |
  | :---        |
+
 ```javascript
 
 // Results By Keywords
@@ -61,7 +63,7 @@ init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
 
 ```
 
-**For Example : Modal** 
+**For Example : Modal**
 <details>
     <summary>sample usage modal</summary>
   <p>
