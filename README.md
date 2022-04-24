@@ -1,6 +1,8 @@
 # hanca packages
 ##### *this is a semi-finished program that I use to help work on the website on the front end.*
 
+`r colorize("some words in red", "red")`
+
 **what's there**
 - [x] Fetch data From Rest API
 - [x] Ajax By Modal
