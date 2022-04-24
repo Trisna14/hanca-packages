@@ -3,15 +3,17 @@
 
 **what's there**
 - [x] API ( Fetch data From Rest )
-- [ ] Modal Box With Ajax
+- [x] Modal Box With Ajax
 
-**For Example** :joy:.
+```html
 
-```javascript
-
+<link rel="stylesheet" href="css/main.css">
 <script type="text/javascript" src="js/package.app.js"></script>
 
 ```
+
+**For Example = Fetch Data Form Rest** :joy:.
+
 
 | All Results |
 | :---        |
@@ -56,5 +58,17 @@ var init = new Pen;
 }
 
 init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
+
+```
+
+**For Example = Modal By Ajax** 
+```javascript
+
+let init = new Modal;
+let REQUEST = {
+    "URL"   :   "", // Find a URL File
+    "BUTTON_ID" :   '' // button id in html 
+}
+init.crt_modal(REQUEST);
 
 ```
