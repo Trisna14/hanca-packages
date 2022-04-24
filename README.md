@@ -1,5 +1,7 @@
-# hanca <span style="color: blue;">packages</span>
+# hanca packages
 ##### this is a semi-finished program that I use to help work on the website on the front end.
+
+<span style="color:red"> *some emphasized markdown text*</span>
 
 **what's there**
 - [x] Fetch data From Rest API
