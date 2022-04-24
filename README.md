@@ -1,9 +1,9 @@
 # hanca-packages
-##### *this is a semi-finished program that I use to help work on the website on the front end.*
+##### *several ways of asynchronous data retrieval*
 
 **what's there**
-- [x] Fetch data From Rest API
-- [x] Ajax By Modal
+- [x] Asynchronous Fetch data From Rest API
+- [ ] - - - -
 
 ```html
 
