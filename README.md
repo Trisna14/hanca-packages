@@ -12,7 +12,7 @@
 
 ```
 
-**For Example : Fetch Data Form Rest** :joy:.
+**For Example : Asynchronous Fetch Data Form Rest** :joy:.
 
 
 | All Results |
@@ -61,7 +61,7 @@ init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
 
 ```
 
-**For Example : Modal By Ajax** 
+**For Example : Modal** 
 <details>
     <summary>sample usage modal</summary>
   <p>
