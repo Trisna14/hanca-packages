@@ -1,4 +1,4 @@
-# hanca packages
+# hanca-packages
 ##### *this is a semi-finished program that I use to help work on the website on the front end.*
 
 **what's there**
