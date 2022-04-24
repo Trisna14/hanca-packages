@@ -62,8 +62,8 @@ init.caller_by(REQUEST_CONFIG, (API) => {console.log(JSON.parse(API))});
 ```
 
 **For Example : Modal By Ajax** 
-<usage-details>
-
+<details>
+    <span>usage details of modal</span>
   <p>
 
 ```js
@@ -78,4 +78,4 @@ init.crt_modal(REQUEST);
 ```
 
 </p>
-</usage-details>
+</details>
